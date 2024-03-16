@@ -8,31 +8,46 @@
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="index.css" rel="stylesheet" />
-    <title>Georgi Dimitrov</title>
+    <title>Georgi Dimitrov - Fullstack Software Engineer</title>
   </head>
   <body>
-    <header class="toolbar">
-      <nav class="nav-bar">
-        <div class="nav-bar-initials-button">
-          <h3>GD</h3>
-        </div>
-        <div class="nav-bar-items">
-          <ul class="nav-bar-item">
-            About
-          </ul>
-          <ul class="nav-bar-item">
-            Projects
-          </ul>
-          <ul class="nav-bar-item">
-            Socials
-          </ul>
-          <ul class="nav-bar-item">
-            Contact
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main></main>
-    <footer></footer>
+    <nav>
+      <div class="arrow" onclick="toggleMenu()"></div>
+      <div class="menu-items">
+        <a class="menu-link" href="#about">About</a>
+        <a class="menu-link" href="#projects">Projects</a>
+        <a class="menu-link" href="#contact">Contact</a>
+        <a class="menu-link" href="#cv">CV</a>
+      </div>
+    </nav>
+    <div class="section" id="about">
+      <h1>About Me</h1>
+      <p></p>
+    </div>
+    <div class="section" id="projects">
+      <h1>Projects</h1>
+      <p></p>
+    </div>
+    <div class="section" id="contact">
+      <h1>Contact</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" />
+        <br />
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" />
+        <br />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <div class="section" id="cv">
+      <h1>CV</h1>
+      <p></p>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
   </body>
 </html>
