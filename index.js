@@ -1,6 +1,7 @@
 const menu = document.querySelector('.menu-items');
 const menuLinks = document.querySelectorAll('.menu-link');
 const arrow = document.querySelector('.arrow');
+const backToTopButton = document.getElementById('backToTop');
 
 const mobileBreakpoint = 480;
 
@@ -43,4 +44,19 @@ document.addEventListener('click', function (event) {
   if (!isMenu && !isArrow && isMenuActive) {
     toggleMenu();
   }
+});
+
+document.addEventListener('scroll', () => {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopButton.style.display = 'block';
+  } else {
+    backToTopButton.style.display = 'none';
+  }
+});
+
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // reset url if it is on some id tag
+  history.pushState('', document.title, window.location.pathname + window.location.search);
 });

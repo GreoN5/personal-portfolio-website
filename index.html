@@ -8,6 +8,11 @@
     />
     <meta content="ie=edge" http-equiv="X-UA-Compatible" />
     <link href="index.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
     <title>Georgi Dimitrov - Fullstack Software Engineer</title>
   </head>
   <body>
@@ -15,18 +20,114 @@
       <div class="arrow" onclick="toggleMenu()"></div>
       <div class="menu-items">
         <a class="menu-link" href="#about">About</a>
+        <a class="menu-link" href="#experience">Experience</a>
         <a class="menu-link" href="#projects">Projects</a>
         <a class="menu-link" href="#contact">Contact</a>
-        <a class="menu-link" href="#cv">CV</a>
       </div>
     </nav>
     <div class="section" id="about">
       <h1>About Me</h1>
       <p></p>
     </div>
+    <div class="section" id="experience">
+      <h1>Experience</h1>
+      <div class="experience-item">
+        <h2>Fullstack software engineer - eValue.cz</h2>
+        <p class="date">October 2021 - Present</p>
+        <ul>
+          <li>
+            Leveraged JavaScript and TypeScript to build robust server-side functionalities using
+            Node.js and Express.js.
+          </li>
+          <li>Collaborated with a team to optimize data retrieval and performance.</li>
+          <li>Contributed to open source projects relevant to the company's tech stack.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="section" id="skills">
+      <h1>Skills</h1>
+      <div class="skills-category">
+        <h2>Programming Languages</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <img alt="javascript" src="assets/js_icon.svg" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img alt="typescript" src="assets/ts_icon.svg" />
+            <h3>TypeScript</h3>
+          </div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h2>Frameworks & Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-card">React</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Docker</div>
+        </div>
+      </div>
+      <div class="skills-category">
+        <h2>Others</h2>
+        <div class="skills-grid">
+          <div class="skill-card">React</div>
+          <div class="skill-card">Node.js</div>
+          <div class="skill-card">Docker</div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="soft-skills">
+      <h1>Soft Skills</h1>
+      <div class="skills-grid">
+        <div class="soft-skill-card">
+          <h3>Effective Communication</h3>
+          <p>
+            Expertise in conveying information clearly and effectively through both verbal and
+            written forms to individuals at all levels. Proficient in technical and non-technical
+            communication.
+          </p>
+        </div>
+        <div class="soft-skill-card">
+          <h3>Problem Solving</h3>
+          <p>
+            Strong analytical skills with a knack for identifying issues and formulating solutions
+            that drive project success and operational efficiency.
+          </p>
+        </div>
+        <div class="soft-skill-card">
+          <h3>Team Collaboration</h3>
+          <p>
+            Adept at working within team environments to achieve common goals. Skilled in fostering
+            positive relationships and understanding team dynamics.
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="section" id="projects">
       <h1>Projects</h1>
-      <p></p>
+      <div class="project-item">
+        <h2>Project Name 1</h2>
+        <p class="project-description">
+          Brief description of the project, its objectives, and outcomes.
+        </p>
+        <p class="technologies-used">Technologies Used: HTML, CSS, JavaScript, React</p>
+        <p class="project-links">
+          <a href="http://example.com" target="_blank">Live Demo</a> |
+          <a href="http://github.com/example" target="_blank">GitHub Repository</a>
+        </p>
+      </div>
+      <div class="project-item">
+        <h2>Project Name 2</h2>
+        <p class="project-description">
+          Brief description of the project, highlighting any unique challenges faced and solutions
+          developed.
+        </p>
+        <p class="technologies-used">Technologies Used: Node.js, Express, MongoDB</p>
+        <p class="project-links">
+          <a href="http://example.com" target="_blank">Live Demo</a> |
+          <a href="http://github.com/example" target="_blank">GitHub Repository</a>
+        </p>
+      </div>
     </div>
     <div class="section" id="contact">
       <h1>Contact</h1>
@@ -43,9 +144,26 @@
         <input type="submit" value="Submit" />
       </form>
     </div>
-    <div class="section" id="cv">
-      <h1>CV</h1>
+    <div class="section">
       <p></p>
+    </div>
+    <div id="backToTop" style="display: none" title="Back to Top">
+      <div>
+        <svg
+          class="feather feather-arrow-up"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M12 19V6M5 12l7-7 7 7"></path>
+        </svg>
+      </div>
     </div>
 
     <script src="index.js" type="text/javascript"></script>
