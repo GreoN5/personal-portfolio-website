@@ -43,6 +43,7 @@ nav a:focus {
 
 .about p {
   margin: 10px 0;
+  max-width: 75%;
 }
 
 .experience-item {
