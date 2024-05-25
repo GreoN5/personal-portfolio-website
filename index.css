@@ -168,6 +168,37 @@ nav a:focus {
   text-decoration: underline;
 }
 
+.contact-info {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.email-box {
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.email-box i {
+  margin-right: 10px;
+}
+
+.social-links a {
+  color: #ccc;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  color: #0a84ff;
+}
+
 .arrow {
   width: 25px;
   height: 25px;
